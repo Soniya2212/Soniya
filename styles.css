@@ -1,0 +1,66 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 1em;
+  background-color: #00d0ff;
+  color: #fff;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1em;
+  padding: 1em;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-name {
+  font-size: 1.1em;
+  margin: 0.5em 0;
+}
+
+.product-price {
+  color: #ff003c;
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+
+.product-description {
+  font-size: 0.9em;
+  color: #555;
+}
+
+@media (min-width: 600px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
